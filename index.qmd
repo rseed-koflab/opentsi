@@ -14,13 +14,14 @@ editor: source
 
 ::: {.hero-text}
 # Open Time Series Initiative
-
 ## Human-Friendly, Machine-Readable, Scientific-Grade Time Series 
 
-```{r, echo = FALSE}
+Publications from public data providers often target a broad audience, making their datasets inconvenient for research. The opentimeseries R package addresses this by providing reusable code for sourcing public data. It splits data into a long format CSV file and metadata into a JSON file, ensuring the output is user-friendly for both humans and machines.
+
+<!-- ```{r, echo = FALSE}
 library(lorem)
 ipsum(sentences = 3)
-```
+``` -->
 
 :::
 
@@ -33,73 +34,52 @@ ipsum(sentences = 3)
 
 ::: {.content-block}
 
-::: {.plain-text}
-# The Hacking for Science Course 
+## Vintages: Versioned Time Series for Researchers 
 
-By popular demand, we're bringing the Hacking for Science course back to the D-MTEC PhD program in fall 2024.
-The course will open to guests from all departments as well as interested guests. 
-We are currently updating the course website, stay tuned and subscribe to our newsletter in the meantime. 
+Why do forecasters need their vintages?
 
-To learn more about the course, including an initial schedule, check our [blog post on the h4sci project](posts/h4sci/).
+A: Forecasters working with time series data need vintages to compare past forecasts with actual outcomes, understand data revisions over time, and improve the accuracy of future predictions. Vintages provide a historical record of data as it was available at different points in time, which is crucial for evaluating and refining forecasting models.
+
+<!-- grid 2 column layout -->
+
+<!-- links why forecasters need their vintages -->
+<!-- rechts: -->
+
+<!-- ```{r}
+library(opentimeseries) 
+archive_read("ch.kof.globalbaro.incident", 
+            remote_archive = "opentsi/kofethz",
+            date = "2023-07-01")
+``` -->
+
+<!-- created grafik vintages mit veränderung zu sehen  -->
 
 :::
 
 ::: {.content-block}
-# The Open Time Series Initiative
+## Open for Contributions: Shared Framework for Data Sourcing
 
-In February of 2024, the RSEED team submitted a proposal to the ETH Rat for the Open Time Series Initiative, which includes 
+the opentimeseries is in its early stages but builds on years of experience in sourcing data at KOF, formerly swissdata ...
 
-```{r, echo = FALSE}
-library(lorem)
-ipsum(2)
-```
+project plan: recycle part about publication...
 
-The Proposal can be found here...
+
+<!-- poster grafik:  nasty excel zu tidy-->
+<!-- swissdata example -->
+
+ button with "read the full proposal"
 
 ::: {.hero-buttons}
-[Proposal Submission](/docs/get-started/h4sci.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button"}
+[Read the full Proposal](/docs/get-started/h4sci.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button"}
 ::: 
 :::
 
-# What KOF says about RSEED: {style="text-align: center;"}
-
 ::: {.content-block}
-::: {.features}
-::: {.feature}
 
-The use of data, knowing how to use it correctly, but also how to make your own data available for others to use so that they can work with it in a suitable way, are important prerequisites in today’s world. As a data producer on the one hand and a data user on the other, KOF can play an important bridging role and bring together data producers and academic users in particular. I am looking forward to the exciting process of helping to build this bridge. - Dr. Klaus Abberger 
+## Involving the Community: H4Sci
 
-:::
-
-::: {.feature}
-
-Over the last two decades, we have witnessed programming, and source code in particular, become a tremendously sharp, illustrative and hence increasingly popular communication channel across many fields of research. RSEED picks up this chance to leverage our resources: Reproducible dissemination of results, interactive communication of methodological advances and truly accessible data, make research more inclusive, increase its reach and therefore its impact. - Dr. Matthias Bannert
 
 :::
-
-::: {.feature}
-
-RSEED is a key resource in our data-centric age, where the availability of microdata, software expertise and analytical skills are becoming increasingly important. The potential of RSEED as a basis for sound economic policy analysis is immense. So it’s not just about having access to data, it’s about being able to unlock its potential through improved analytical skills. It is very exciting to be part of this project. - Prof. Dr. Martin Wörter
-
-:::
-
-::: {.feature}
-
-Integrating data from all over Switzerland here at KOF will supercharge its usefulness for the social sciences. To make this a reality, we need to do lots of engineering. As an IT specialist with a fondness for economic research, I will contribute my expertise and many lines of code to this promising venture. - Oliver Müller
-
-:::
-
-::: {.feature}
-RSEED is a particularly promising field of research for my work in democracy and innovation. For the citizens in any democracy, enhanced, equal access to data as well as data quality can be defined as public goods. Enhanced data and a programming-driven approach to the analysis of these data are also the basis needed for innovation in the collective decision-making processes we examine in our research, with the goal to improve democracy and to ensure long-term welfare for society. - Prof. Dr. Hans Gersbach
-:::
-
-::: {.feature}
-
-RSEED has the potential to make data accessible beyond its current reach of data scientists and software engineers. I want to help grow the RSEED section and develop our community. - Minna Heim
-:::
-
-:::
-
 :::
 <!-- ::: {.column-margin}
 

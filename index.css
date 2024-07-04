@@ -20,6 +20,10 @@
     font-size: 2.5rem;
 }
 
+.hero-banner .content-block .hero-text {
+    width: 65%;
+}
+
 .hero-banner .content-block {
     display: flex;
     flex-direction: row;
