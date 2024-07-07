@@ -2,35 +2,29 @@ project:
   type: website
 
 website:
-  title: "Opentsi"
+  title: "Open Time Series Initiative"
+  search: false
+  page-navigation: false
   navbar:
+    collapse-below: lg
+    background: light
+    pinned: false
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-  page-footer:
-    background: rgb(34,68,94)
-    left:
-      - text: "<b> Join the quarterly <br> RSEED newsletter! </b> "
-        href: https://kof.ethz.ch/en/the-institute/kof-divisions/research-division-kof-lab/rseed/subscription.html#
-    center:
-      - text: "RSEED is a part of KOF Lab at ETH Zurich"
-        href: https://kof.ethz.ch/en/the-institute/kof-divisions/research-division-kof-lab/rseed.html#
-    right: 
-      - text: "<b> Feedback, Questions, Ideas?</b> 
-              <br>
-              Contact us.
-              <br>
-              <b> Minna Heim </b> 
-              <br>
-              heim [ at ] kof.ethz.ch"
+       - href: empty.qmd
+    #    text: Home
+     # - about.qmd
+    tools:
+      - icon: github
+        href: https://github.com/opentsi
 
+  
 
 format:
   html:
     theme: lightly
     css: styles.css
-    toc: true
+    code-copy: true
+    code-overflow: wrap
 
 
 
