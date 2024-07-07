@@ -31,6 +31,7 @@
 
 .hero-banner .hero-image-right {
     display: flex;
+    margin-left: 40pt;
     align-items: center;
 }
 

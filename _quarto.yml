@@ -8,6 +8,23 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+  page-footer:
+    background: rgb(34,68,94)
+    left:
+      - text: "<b> Join the quarterly <br> RSEED newsletter! </b> "
+        href: https://kof.ethz.ch/en/the-institute/kof-divisions/research-division-kof-lab/rseed/subscription.html#
+    center:
+      - text: "RSEED is a part of KOF Lab at ETH Zurich"
+        href: https://kof.ethz.ch/en/the-institute/kof-divisions/research-division-kof-lab/rseed.html#
+    right: 
+      - text: "<b> Feedback, Questions, Ideas?</b> 
+              <br>
+              Contact us.
+              <br>
+              <b> Minna Heim </b> 
+              <br>
+              heim [ at ] kof.ethz.ch"
+
 
 format:
   html:

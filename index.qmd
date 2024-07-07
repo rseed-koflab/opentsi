@@ -11,24 +11,18 @@ editor: source
 
 
 ::: {.content-block}
-
 ::: {.hero-text}
 # Open Time Series Initiative
 ## Human-Friendly, Machine-Readable, Scientific-Grade Time Series 
 
-Publications from public data providers often target a broad audience, making their datasets inconvenient for research. The opentimeseries R package addresses this by providing reusable code for sourcing public data. It splits data into a long format CSV file and metadata into a JSON file, ensuring the output is user-friendly for both humans and machines.
-
-<!-- ```{r, echo = FALSE}
-library(lorem)
-ipsum(sentences = 3)
-``` -->
-
+Data publications from public data providers often target a broad audience, making their datasets inconvenient for research. The opentimeseries framework addresses this by providing pre-cleaned economic data, reusable code for sourcing public data, and the ability to version data. By integrating the opentimeseries framework into teaching at ETH, the framework can be expanded and improved.
 :::
 
 ::: {.hero-image-right}
 <img src="images/icons_grouped.jpg" style="width: 100%;"/>
 ::: 
 :::
+
 :::
 
 
@@ -36,63 +30,49 @@ ipsum(sentences = 3)
 
 ## Vintages: Versioned Time Series for Researchers 
 
-Why do forecasters need their vintages?
+<!-- alternativ zum grid system kann man, wie bei quarto presentations verschiedene "fenster" machen, wo man von der forecasting erklärung zum code zur grafik gehen kann, mit ::: {.panel-tabset} -->
 
-A: Forecasters working with time series data need vintages to compare past forecasts with actual outcomes, understand data revisions over time, and improve the accuracy of future predictions. Vintages provide a historical record of data as it was available at different points in time, which is crucial for evaluating and refining forecasting models.
+::: {.grid}
+::: {.g-col-6}
+#### Why do forecasters need their vintages?
 
-<!-- grid 2 column layout -->
+Forecasters working with time series data need vintages to compare past forecasts with actual outcomes, understand data revisions over time, and improve the accuracy of future predictions. Vintages provide a historical record of data as it was available at different points in time, which is crucial for evaluating and refining forecasting models.
+:::
 
-<!-- links why forecasters need their vintages -->
-<!-- rechts: -->
+::: {.g-col-6}
 
-<!-- ```{r}
-library(opentimeseries) 
-archive_read("ch.kof.globalbaro.incident", 
-            remote_archive = "opentsi/kofethz",
-            date = "2023-07-01")
-``` -->
+#### Reproducible Sneak Peek of what the Opentimeseries framework can do:
+```r
+library(devtools)
+library(opentimeseries)
+install_github("opentsi/opentsi")
+archive_read("ch.kof.globalbaro.incident",
+    remote_archive = "opentsi/kofethz",
+    date = "2023-07-01"
+)
+```
 
-<!-- created grafik vintages mit veränderung zu sehen  -->
-
+<!--  created grafik vintages mit veränderung zu sehen -->
+::: 
 :::
 
 ::: {.content-block}
 ## Open for Contributions: Shared Framework for Data Sourcing
 
-the opentimeseries is in its early stages but builds on years of experience in sourcing data at KOF, formerly swissdata ...
+Although the open time series framework is in its early stages, it builds on years of experience in sourcing economic data at the Swiss Economic Institute (KOF-ETH). Formerly operating under "swissdata," opentimeseries aims to alleviate the significant burden researchers face when working with data, particularly the challenges of sourcing and cleaning due to unsuitable publishing practices by public data providers. This framework includes splitting data and meta information into two separate text files and formats: a simple CSV spreadsheet and a nested JSON file for multilingual data description. Through swissdata, over *xyz datasets* have been sourced, cleaned, and made accessible to researchers. To increase reproducibility, the swissdata framework has been applied not only to selected data but also published in the form of the {opentsi} package, which assists researchers in sourcing and cleaning the public data necessary for their research.
 
-project plan: recycle part about publication...
-
-
+The usage of the open source tools such as Git, when versioning time series, GitHub when hosting the pre-cleaned public data, and the R programming language for the package construction, enables other public data consumers and researchers to collaborate with us on the opentimeseries framework.
+:::
 <!-- poster grafik:  nasty excel zu tidy-->
 <!-- swissdata example -->
 
- button with "read the full proposal"
-
-::: {.hero-buttons}
-[Read the full Proposal](/docs/get-started/h4sci.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button"}
-::: 
-:::
-
 ::: {.content-block}
-
 ## Involving the Community: H4Sci
-
-
+Starting in fall 2024, Opentimeseries data and software will be integrated into the Hacking for Science course. given at ETH. Originally created for ETHZ D-MTEC PhD students, Hacking for Science is a highly interactive online course whose big picture guidance and hands-on software development approach attracts students from a great variety of fields. We believe that the integration of the opentimeseries framework makes the next generation of public servants more capable Open Science leaders who are familiar with Swiss data landscape.
+<!-- h4sci text - from proposal -->
 :::
 :::
-<!-- ::: {.column-margin}
 
-**Newsletter Registration**
 
-Stay informed about new courses and trainings. [Join the quarterly RSEED newsletter](https://kof.ethz.ch/en/the-institute/kof-divisions/research-division-kof-lab/rseed/subscription.html).
 
-```{r, echo=FALSE}
-library(qrcode)
 
-q <- qrcode::qr_code("https://kof.ethz.ch/en/the-institute/kof-divisions/research-division-kof-lab/rseed/subscription.html")
-plot(q)
-
-```
-
-::: -->
