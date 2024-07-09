@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "parkme.html",
+    "href": "parkme.html",
+    "title": "Open Time Series Initiative",
+    "section": "",
+    "text": "The opentimeseries initiative Data publications from public data providers often target a broad audience, making their datasets inconvenient for research. The opentimeseries framework addresses this by providing pre-cleaned economic data, reusable code for sourcing public data, and the ability to version data. By integrating the opentimeseries framework into teaching at ETH, the framework can be expanded and improved."
+  },
+  {
+    "objectID": "parkme.html#vintages-versioned-time-series-for-researchers",
+    "href": "parkme.html#vintages-versioned-time-series-for-researchers",
+    "title": "Open Time Series Initiative",
+    "section": "Vintages: Versioned Time Series for Researchers",
+    "text": "Vintages: Versioned Time Series for Researchers\n\n\n\nWhy do forecasters need their vintages?\nForecasters working with time series data need vintages to compare past forecasts with actual outcomes, understand data revisions over time, and improve the accuracy of future predictions. Vintages provide a historical record of data as it was available at different points in time, which is crucial for evaluating and refining forecasting models.\n\n\nReproducible Sneak Peek of what the Opentimeseries framework can do:\nlibrary(devtools)\nlibrary(opentimeseries)\ninstall_github(\"opentsi/opentsi\")\narchive_read(\"ch.kof.globalbaro.incident\",\n    remote_archive = \"opentsi/kofethz\",\n    date = \"2023-07-01\"\n)"
+  },
+  {
+    "objectID": "parkme.html#open-for-contributions-shared-framework-for-data-sourcing",
+    "href": "parkme.html#open-for-contributions-shared-framework-for-data-sourcing",
+    "title": "Open Time Series Initiative",
+    "section": "Open for Contributions: Shared Framework for Data Sourcing",
+    "text": "Open for Contributions: Shared Framework for Data Sourcing\nAlthough the open time series framework is in its early stages, it builds on years of experience in sourcing economic data at the Swiss Economic Institute (KOF-ETH). Formerly operating under “swissdata,” opentimeseries aims to alleviate the significant burden researchers face when working with data, particularly the challenges of sourcing and cleaning due to unsuitable publishing practices by public data providers. This framework includes splitting data and meta information into two separate text files and formats: a simple CSV spreadsheet and a nested JSON file for multilingual data description. Through swissdata, over xyz datasets have been sourced, cleaned, and made accessible to researchers. To increase reproducibility, the swissdata framework has been applied not only to selected data but also published in the form of the {opentsi} package, which assists researchers in sourcing and cleaning the public data necessary for their research.\nThe usage of the open source tools such as Git, when versioning time series, GitHub when hosting the pre-cleaned public data, and the R programming language for the package construction, enables other public data consumers and researchers to collaborate with us on the opentimeseries framework."
+  },
+  {
+    "objectID": "parkme.html#involving-the-community-h4sci",
+    "href": "parkme.html#involving-the-community-h4sci",
+    "title": "Open Time Series Initiative",
+    "section": "Involving the Community: H4Sci",
+    "text": "Involving the Community: H4Sci\nStarting in fall 2024, Opentimeseries data and software will be integrated into the Hacking for Science course. given at ETH. Originally created for ETHZ D-MTEC PhD students, Hacking for Science is a highly interactive online course whose big picture guidance and hands-on software development approach attracts students from a great variety of fields. We believe that the integration of the opentimeseries framework makes the next generation of public servants more capable Open Science leaders who are familiar with Swiss data landscape."
+  },
+  {
+    "objectID": "index.html#human-friendly-machine-readable.",
+    "href": "index.html#human-friendly-machine-readable.",
+    "title": "Open Time Series Initiative",
+    "section": "Human-Friendly, Machine-Readable.",
+    "text": "Human-Friendly, Machine-Readable.\nThe Open Time Series Initiative derives scientific-grade time series from data publications for the broader public. In addition to data, we share an inclusive, battle-tested framework for ingestion of publicly available data and vintage management.\n\nGitHub Organization"
+  }
+]
