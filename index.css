@@ -129,3 +129,20 @@ p{
         margin: 20px 0 0 30px;
     }
 }
+
+/* Mobile responsiveness for grid columns */
+@media (max-width: 767px) {
+    .g-col-7, .g-col-5 {
+        grid-column: 1 / -1 !important;
+        width: 100% !important;
+    }
+    
+    /* stacks heading before code snippet in mobile */
+    .g-col-5 {
+        order: 2;
+    }
+    
+    .g-col-7 {
+        order: 1;
+    }
+}
